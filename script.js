@@ -56,17 +56,13 @@ let card = {
 	celsius: document.getElementById('celsius'),
 	fahrenheit: document.getElementById('fahrenheit'),
 };
-console.log('🚀 ~ file: script.js:23 ~ card:', card);
 function randomDay() {
 	let rand = Math.floor(Math.random() * 7);
 
 	return rand;
 }
 function changeCardInfo(index) {
-	console.log(
-		'🚀 ~ file: script.js:31 ~ changeCardInfo ~ weekWitherInfo[index]:',
-		weekWitherInfo[index]
-	);
+
 	card.day.innerHTML = weekWitherInfo[index].day;
 	card.wither.innerHTML = weekWitherInfo[index].wither;
 	card.img.src = weekWitherInfo[index].img;
