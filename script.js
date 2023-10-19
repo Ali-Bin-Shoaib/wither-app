@@ -57,9 +57,8 @@ let card = {
 	fahrenheit: document.getElementById('fahrenheit'),
 };
 function randomDay() {
-	let rand = Math.floor(Math.random() * 7);
+	return Math.floor(Math.random() * 7);
 
-	return rand;
 }
 function changeCardInfo(index) {
 
